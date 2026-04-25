@@ -30,7 +30,7 @@ mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
 
-GATEWAY_API_KEY = os.environ['GATEWAY_API_KEY']
+GATEWAY_API_KEY = "codebear"  # hardcoded by design — see README
 
 app = FastAPI(title="CodeBear Anthropic Gateway")
 
